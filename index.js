@@ -1,13 +1,11 @@
-// TODO: Include packages needed for this application
+// TODO: Required packages inquirer, fs, md function from generate markdown file
 
-// TODO: Create an array of questions for user input
-const questions = [];
+// TODO: write an inqurier prompt to match acceptance criteria
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
+// in .then of inquirer prompt call fs write file
 
-// Function call to initialize app
-init();
+
+// in fs write file (2) arguments first argument 1. file path file name 2. data (generateMarkdown)
+
+

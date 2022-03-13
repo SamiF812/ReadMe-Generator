@@ -1,11 +1,13 @@
-// TODO: Required packages inquirer, fs, md function from generate markdown file
+// required 
 const inquirer = require("inquirer");
 const fs = require("fs");
 
 
+// what will be used to create the contents of the new file
 
 const generateReadMe = ({projectName, description, installation, usage, license, contribution, tests, github, email }) =>
     
+// License badge image and filled in with selected option
 `# Title: ${projectName}
 [![License](https://img.shields.io/badge/License-${license}-green)](https://opensource.org/licenses/${license})
 
@@ -61,7 +63,7 @@ ${description}
 
 
 
-
+// prompts for the terminal
 inquirer
     .prompt([
         {
@@ -119,6 +121,8 @@ inquirer
 
 
     ])
+    // when you get the responses/answers to generate the new file with that info and then log success when the created file appears
+
         .then((answers) => {
             const mdInfo = generateReadMe(answers);
             fs.writeFile("GeneratedReadMe.md", mdInfo, (err) =>
@@ -129,9 +133,6 @@ inquirer
 
 
        
-        // in .then of inquirer prompt call fs write file
-
-
-// in fs write file (2) arguments first argument 1. file path file name 2. data (generateMarkdown)
+   
 
         

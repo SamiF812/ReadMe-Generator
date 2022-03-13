@@ -1,10 +1,10 @@
-# Title: testing neha
+# Title: Readme Generator HW
 [![License](https://img.shields.io/badge/License-Mozzila-green)](https://opensource.org/licenses/Mozzila)
 
 
 
 ## Description
-nothing
+An app that generates a readme
 
 
 ## Table of Contents
@@ -19,13 +19,13 @@ nothing
 
 ## Installation
 <a href = "installation"></a>
-* none yet
+* NPM install
 
 
 
 ## Usage
 <a href = "usage"></a>
-* generating md
+* generating readme files from a template
 
 
 
@@ -37,16 +37,16 @@ nothing
 
 ## Contribution
 <a href = "contribution"></a>
-* sami
+* Sami Fares
 
 
 
 ## Tests
 <a href = "tests"></a>
-* none
+* None yet
 
 
 ## Questions
 <a href = "questions"></a>
-* Check out my GitHub: https://github.com/sami<br>
-* Feel free to email me at: sami@sami
+* Check out my GitHub: https://github.com/SamiF812<br>
+* Feel free to email me at: djsamif@gmail.com

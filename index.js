@@ -6,12 +6,13 @@ const fs = require("fs");
 
 const generateReadMe = ({projectName, description, installation, usage, license, contribution, tests, github, email }) =>
     
-`# Title: no
-[![License](https://img.shields.io/badge/License-MIT-green)]
+`# Title: ${projectName}
+[![License](https://img.shields.io/badge/License-${license}-green)](https://opensource.org/licenses/${license})
+
 
 
 ## Description
-no
+${description}
 
 
 ## Table of Contents
@@ -26,37 +27,38 @@ no
 
 ## Installation
 <a href = "installation"></a>
-*no
+* ${installation}
 
 
 
 ## Usage
 <a href = "usage"></a>
-*no
+* ${usage}
 
 
 
 ## License
 <a href = "usage"></a>
-*MIT
+* ${license}
 
 
 
 ## Contribution
 <a href = "contribution"></a>
-*no
+* ${contribution}
 
 
 
 ## Tests
 <a href = "tests"></a>
-*no
+* ${tests}
 
 
 ## Questions
 <a href = "questions"></a>
-*Check out my GitHub: https://github.com/no<br>
-*Feel free to email me at: no`;
+* Check out my GitHub: https://github.com/${github}<br>
+* Feel free to email me at: ${email}`;
+
 
 
 

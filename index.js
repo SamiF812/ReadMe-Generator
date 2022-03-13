@@ -4,12 +4,14 @@ const fs = require("fs");
 
 
 
-const generatedReadMe = ({projectName, description, installation, usage, license, contribution, test, github, email }) =>
-`# projectName
+const generateReadMe = ({projectName, description, installation, usage, license, contribution, tests, github, email }) =>
+    
+`# Title: no
+[![License](https://img.shields.io/badge/License-MIT-green)]
 
 
 ## Description
-<!-- code -->
+no
 
 
 ## Table of Contents
@@ -17,44 +19,46 @@ const generatedReadMe = ({projectName, description, installation, usage, license
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
+- [Contributing](#contribution)
 - [Tests](#tests)
 - [Questions](#questions)
 
 
 ## Installation
 <a href = "installation"></a>
-*${installation}
+*no
 
 
 
 ## Usage
 <a href = "usage"></a>
-*${usage}
+*no
 
 
 
 ## License
-<!-- code -->
+<a href = "usage"></a>
+*MIT
 
 
 
 ## Contribution
 <a href = "contribution"></a>
-*${contribution}
+*no
 
 
 
 ## Tests
-<a href = "test"></a>
-*${test}
+<a href = "tests"></a>
+*no
 
 
 ## Questions
-<!-- code -->
+<a href = "questions"></a>
+*Check out my GitHub: https://github.com/no<br>
+*Feel free to email me at: no`;
 
 
-<!-- export? -->`
 
 inquirer
     .prompt([
@@ -97,7 +101,7 @@ inquirer
         {
             type: `input`,
             message: `What are the test instructions?`,
-            name: `test`,
+            name: `tests`,
         },
         {
             type: `input`,

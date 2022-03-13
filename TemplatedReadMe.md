@@ -1,6 +1,6 @@
 
 
-
+## projectName
 
 
 ## Description
@@ -14,7 +14,7 @@
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
-- [Qiestions](#questions)
+- [Questions](#questions)
 
 
 ## Installation

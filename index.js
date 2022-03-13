@@ -1,9 +1,60 @@
 // TODO: Required packages inquirer, fs, md function from generate markdown file
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generatedMD = require(`./utils/generateMarkdown.js`);
 
-// TODO: write an inqurier prompt to match acceptance criteria
+
+
+const generatedReadMe = ({projectName, description, installation, usage, license, contribution, test, github, email }) =>
+`# projectName
+
+
+## Description
+<!-- code -->
+
+
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+
+## Installation
+<a href = "installation"></a>
+*${installation}
+
+
+
+## Usage
+<a href = "usage"></a>
+*${usage}
+
+
+
+## License
+<!-- code -->
+
+
+
+## Contribution
+<a href = "contribution"></a>
+*${contribution}
+
+
+
+## Tests
+<a href = "test"></a>
+*${test}
+
+
+## Questions
+<!-- code -->
+
+
+<!-- export? -->`
 
 inquirer
     .prompt([
@@ -62,9 +113,13 @@ inquirer
 
 
     ])
-        .then(responded => {
-            fs.writeFile 
-        }
+        .then((answers) => {
+            const mdInfo = generateReadMe(answers);
+            fs.writeFile("GeneratedReadMe.md", mdInfo, (err) =>
+            err ? console.log(err) : console.log("Success!") 
+            );
+        
+        });
 
 
        
@@ -73,4 +128,4 @@ inquirer
 
 // in fs write file (2) arguments first argument 1. file path file name 2. data (generateMarkdown)
 
-
+        
